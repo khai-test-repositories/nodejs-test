@@ -7,6 +7,8 @@
 .node_libraries
 /build
 
+test*
+
 # Logs
 logs
 *.log
