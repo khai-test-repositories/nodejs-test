@@ -1,4 +1,4 @@
 #! /usr/env/bin node
 
-var {alert, getCompilerName} = require('.');
-alert("NodeJS C++ addon", `Using compiler ${getCompilerName()}`);
+var {alert, getCompilerCode} = require('.');
+alert("NodeJS C++ addon", `Using compiler ${getCompilerCode()}`);

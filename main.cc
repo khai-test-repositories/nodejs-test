@@ -28,14 +28,14 @@ namespace addon {
 
     }
 
-    void getCompilerName(const FunctionCallbackInfo<Value> &args) {
+    void getCompilerCode(const FunctionCallbackInfo<Value> &args) {
         Isolate *isolate = args.GetIsolate();
         args.GetReturnValue().Set(String::NewFromUtf8(isolate, COMPILER_NAME));
     }
 
     void init(Local<Object> exports) {
         NODE_SET_METHOD(exports, "alert", alert);
-        NODE_SET_METHOD(exports, "getCompilerName", getCompilerName);
+        NODE_SET_METHOD(exports, "getCompilerCode", getCompilerCode);
     }
 
     NODE_MODULE(main, init)
