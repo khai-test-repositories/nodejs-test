@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-test",
+  "version": "0.0.0",
+  "main": "index.js",
+  "devDependencies": {
+      "node-gyp": "^3.3.1"
+  },
+  "scripts": {
+      "configure": "node-gyp configure",
+      "build": "node-gyp build",
+      "clean": "rm npm-debug*",
+      "test": "node test.js"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}
