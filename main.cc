@@ -28,8 +28,9 @@ namespace addon {
 
     }
 
-    void getCompilerName(const FunctionCallbackInfo<Value> &) {
-        cout << "Compiler: " << COMPILER_NAME << endl;
+    void getCompilerName(const FunctionCallbackInfo<Value> &args) {
+        Isolate *isolate = args.GetIsolate();
+        args.GetReturnValue().Set(String::NewFromUtf8(isolate, COMPILER_NAME));
     }
 
     void init(Local<Object> exports) {
