@@ -22,3 +22,9 @@ cd nodejs-test
 npm run configure
 npm run build
 ```
+
+## Testing
+
+```bash
+npm test
+```
